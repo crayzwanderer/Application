@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:) :) MeWeather:)</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weatherappWrapper">
+        <div class="weatherapp">
+          <form id="forms">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="text"
+                  placeholder="Type a City..."
+                  autocomplete="off"
+                  autofocus="on"
+                  class="form-control"
+                  id="cityinput"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+            
+          </form>
+          <div class="overview">
+            <h1>Shorewood</h1>
+
+            <ul class="textTop" id="textTop">
+              <li id="high">H:58°</li>
+              <li id="low">L:22°</li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="6" id="image">
+              <div class="clearfix weather-temperature">
+                <img
+                  class="pic"
+                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                  ,
+                  alt="clear-sky-day"
+                />
+              </div>
+            </div>
+
+            <div class="temp" id="temp">
+              <span class="justTemp" id="justTemp">12</span>
+
+              <span class="units" id="fLink">°F</span
+              >
+            </div>
+
+            <span class="left">
+              <ul>
+                <li class="p" id="precipitation">Precipitation: 75%</li>
+                <li class="h" id="humidity">Humidity: 3%</li>
+                <li class="w" id="wind">Wind: 23%</li>
+                <li id="hu">Humidity 3%</li>
+              </ul>
+            </span>
+            <div> Jello World</div>
+<br/>
+            <div class="weatherforecast" id="forecast">
+              <div class="row">
+                <div class="col-2">
+                  <div class="dayoftheweek">dayoftheweek</div>
+                <div class="condition"></div>
+                <img
+                  src="C:\Users\Crayz\Downloads\Forcast.png"
+                  alt="sun picture"
+                  width="38"
+                />
+                <div class="weather-forecast-temperatures">
+                  <span class="max">29°</span><span class="min">15°</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br/>
+       
+        <div class="link">
+          <small
+            ><a
+              href="https://github.com/crayzwanderer/VanillaWeatherApp"
+              target="_blank"
+              >Open-source Code</a
+            >
+            , by Christina Velasquez
+          </small>
+          <p>POSITIVEDISTRUCTION</p>
+        </div>
+    
+   
+    
+    <script src="src/script.js"></script>;
+  </body>
+</html>

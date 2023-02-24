@@ -1,0 +1,173 @@
+h1 {
+  color: pink;
+  margin-left: 12px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 7px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  font-size: 3px;
+}
+li {
+  list-style: none;
+  margin: 0;
+
+  padding: 0;
+  color: rgb(135, 135, 135);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+.left {
+  position: relative;
+  padding-left: 80px;
+  padding-bottom: 50px;
+}
+.toppic {
+  margin: 0;
+  padding: 0;
+}
+.weatherappWrapper {
+  max-width: 1150px;
+  margin: 20px auto;
+}
+.weatherapp {
+  border: 1px solid navy;
+  padding: 20px;
+  margin-top: 60px;
+  border-radius: 30px;
+}
+
+.overview {
+  margin-bottom: 5px;
+  margin-left: 60px;
+}
+.temp {
+  margin-top: 35px;
+  position: relative;
+  top: -34px;
+  color: orange;
+  font-size: 45px;
+  font-weight: 600;
+  margin-left: -90px;
+}
+
+#image {
+  margin-right: 100px;
+}
+.link {
+  display: block;
+  margin: 0 auto;
+  margin-left: 2px;
+  margin-bottom: -15px;
+}
+.pic {
+  margin: -22px;
+  width: 190px;
+  height: 190px;
+  margin-left: -13px;
+}
+.units {
+  position: relative;
+  top: -20px;
+  font-size: 20px;
+  color: black;
+}
+#searchform {
+  padding-bottom: 15px;
+}
+.space {
+  padding-top: 15px;
+}
+
+#precipitation {
+  font-size: 15px;
+  color: orange;
+
+  padding-bottom: 15px;
+}
+#humidity {
+  font-size: 15px;
+  color: green;
+  padding: 3px;
+  padding-bottom: 15px;
+}
+#wind {
+  font-size: 15px;
+  color: blue;
+  padding: 3px;
+  padding-bottom: 15px;
+}
+#hu {
+  font-size: 15px;
+  color: red;
+  padding: 3px;
+}
+#justTemp {
+  margin-left: 25px;
+}
+#textTop {
+  margin-left: 12px;
+  margin-top: -7px;
+}
+#high {
+  color: #0dabee;
+  display: inline;
+  margin-left: 19px;
+}
+#low {
+  color: #0dabee;
+  display: inline;
+  margin-left: 10px;
+}
+.weatherforecast {
+  display: block;
+  margin: 0 auto;
+  color: #0dabee;
+  margin-bottom: 35px;
+  text-align: center;
+  margin-left: 2px;
+}
+.weatherforecast-date {
+  font-size: 16px;
+  color: black;
+}
+.weatherforecast-temperatures {
+  font-size: 16px;
+}
+.min {
+  opacity: 60%;
+}
+.row {
+  margin: 4px;
+  max-width: 1100px;
+}
+.condition {
+  text-align: center;
+  color: orange;
+  font-size: 15px;
+  font-family: cursive;
+  text-transform: capitalize;
+  width: max-content;
+}
+
+.updown {
+  margin-left: 5px;
+  display: block;
+  margin: 0 auto;
+}
+.col-2 {
+  max-width: max-content;
+}
+.dayoftheweek {
+  text-decoration: underline;
+}
