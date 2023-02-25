@@ -1,6 +1,6 @@
 h1 {
-  color: Orange;
-  margin-left: 12px;
+  color: blue;
+  margin-left: 24px;
   padding-top: 15px;
   padding-bottom: 5px;
   font-size: 30px;
@@ -135,7 +135,8 @@ li {
   color: #0dabee;
   margin-bottom: 35px;
   text-align: center;
-  margin-left: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 .weatherforecast-date {
   font-size: 16px;
@@ -170,4 +171,7 @@ li {
 }
 .dayoftheweek {
   text-decoration: underline;
+}
+
+.backgroundbox {
 }

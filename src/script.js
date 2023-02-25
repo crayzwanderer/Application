@@ -4,7 +4,7 @@
 //Searching for City. Responsible for making AJAX call.
 function search(city) {
   let apiKey = "a91cd2d089f0b9eff22468b81bef4d91";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=Metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=Imperial`;
   axios.get(apiUrl).then(displayCityName);
 }
 
@@ -42,9 +42,9 @@ function displayCityName(response) {
   let humidity = document.querySelector("#hu");
   humidity.innerHTML = `Humidity: ${response.data.main.humidity}`;
   let maxhigh = document.querySelector("#high");
-  maxhigh.innerHTML = `H: ${Math.round(response.data.main.temp_max)}`;
+  maxhigh.innerHTML = `⬆️ ${Math.round(response.data.main.temp_max)}`;
   let maxlow = document.querySelector("#low");
-  maxlow.innerHTML = `L: ${Math.round(response.data.main.temp_min)}`;
+  maxlow.innerHTML = `⬇️ ${Math.round(response.data.main.temp_min)}`;
   console.log(response.data.coord.lon);
   console.log(response.data.coord.lat);
   forecastCall(response.data.coord);
