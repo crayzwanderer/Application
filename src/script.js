@@ -20,15 +20,15 @@ function logCity(event) {
 //API forecast call
 function forecastCall(coordinates) {
   console.log(coordinates);
-  let apiKey = " 5397bf59109et4bf3da3dbddao74e180";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=Lisbon&key=5397bf59109et4bf3da3dbddao74e180&units=Metric`;
+  let apiKey = "ef45dbb5226daf4a30b508c33ota60fe";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat=${coordinates.lat}&key=${apiKey}`;
   console.log(apiUrl);
   axios.get(apiUrl).then(displayforecast);
 }
 
 //Function Display City Name & Temperature
 function displayCityName(response) {
-  console.log(response.data.main);
+  console.log("response", response.data);
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${response.data.name}`;
   let tempp = document.querySelector("#justTemp");
@@ -59,8 +59,9 @@ search("Chicago");
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Friday", "Sat"];
-  return day[days];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
 }
 
 //Display Forecast
@@ -69,7 +70,6 @@ function displayforecast(response) {
   let forecast = response.data.daily;
   let fElement = document.querySelector("#forecast");
   let forecastHTML = `<div class ="row" id="row">`;
-  let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Friday", "Sat"];
   forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
