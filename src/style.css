@@ -1,11 +1,19 @@
 h1 {
-  color: blue;
-  margin-left: 24px;
-  padding-top: 15px;
-  padding-bottom: 5px;
-  font-size: 30px;
+  text-align: center;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(55, 209, 255) 0%,
+    rgb(14, 31, 111) 100.2%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-left: -45px;
+  padding-top: 35px;
+  padding-bottom: 23px;
+  font-size: 65px;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
+  font-weight: bolder;
   line-height: 28px;
   text-align: left;
   margin-bottom: 7px;
@@ -15,6 +23,7 @@ ul {
   margin: 0;
   padding: 0;
   font-size: 3px;
+  margin-left: -70px;
 }
 li {
   list-style: none;
@@ -29,8 +38,9 @@ li {
 }
 .left {
   position: relative;
-  padding-left: 80px;
+  margin-left: 104px;
   padding-bottom: 50px;
+  margin-top: 6px;
 }
 .toppic {
   margin: 0;
@@ -55,10 +65,12 @@ li {
   margin-top: 35px;
   position: relative;
   top: -34px;
-  color: orange;
+  color: black;
   font-size: 45px;
   font-weight: 600;
-  margin-left: -90px;
+  margin-left: -300px;
+  border: #0dabee;
+  border-radius: 60;
 }
 
 #image {
@@ -74,7 +86,7 @@ li {
   margin: -22px;
   width: 190px;
   height: 190px;
-  margin-left: -13px;
+  margin-left: 33px;
 }
 .units {
   position: relative;
@@ -89,34 +101,39 @@ li {
   padding-top: 15px;
 }
 
-#precipitation {
-  font-size: 15px;
-  color: orange;
-
-  padding-bottom: 15px;
+#country {
+  font-family: cursive;
+  font-size: 32px;
+  color: #82acff;
+  padding-bottom: 20px;
 }
 #humidity {
-  font-size: 15px;
-  color: green;
+  font-family: cursive;
+  font-size: 22px;
+  color: black;
   padding: 3px;
   padding-bottom: 15px;
 }
 #wind {
-  font-size: 15px;
-  color: blue;
+  font-family: cursive;
+  font-size: 22px;
+  color: black;
   padding: 3px;
   padding-bottom: 15px;
 }
 #hu {
-  font-size: 15px;
-  color: red;
+  font-family: cursive;
+  font-size: 22px;
+  color: black;
   padding: 3px;
 }
 #justTemp {
-  margin-left: 25px;
+  margin-left: -233px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
 }
 #textTop {
-  margin-left: 12px;
+  margin-left: -59px;
   margin-top: -7px;
 }
 #high {
@@ -135,13 +152,10 @@ li {
   color: #0dabee;
   margin-bottom: 35px;
   text-align: center;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: -2px;
+  padding-right: -2px;
 }
-.weatherforecast-date {
-  font-size: 16px;
-  color: black;
-}
+
 .weatherforecast-temperatures {
   font-size: 16px;
 }
@@ -151,14 +165,16 @@ li {
 .row {
   margin: 4px;
   max-width: 1100px;
+  text-align: center;
 }
 .condition {
   text-align: center;
-  color: orange;
+  color: black;
   font-size: 15px;
   font-family: cursive;
   text-transform: capitalize;
   width: max-content;
+  margin-left: 5px;
 }
 
 .updown {
@@ -170,8 +186,46 @@ li {
   max-width: max-content;
 }
 .dayoftheweek {
-  text-decoration: underline;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 1200px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(55, 209, 255) 0%,
+    rgb(14, 31, 111) 100.2% background-clip: text; -webkit-background-clip: text;
+      color: transparent;
+  );
 }
 
-.backgroundbox {
+body {
+  color: blueviolet;
+}
+.image {
+  text-align: center;
+  margin-left: 450px;
+}
+.container {
+  background: #f2f4f7;
+  opacity: 96%;
+  border-radius: 30px;
+  width: fit-content;
+  box-shadow: 10px 5px 5px #74878f;
+  margin-top: -25px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.body {
+  background-color: #f7f7f7;
+}
+.weathericon {
+  position: relative;
+  display: inline-block;
+  margin-left: 190px;
+}
+.mainicon {
+  position: relative;
+  margin-left: -1720px;
+  margin-top: -880px;
 }

@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body>
+  <body class="body">
     <div class="container">
       <div class="weatherappWrapper">
         <div class="weatherapp">
@@ -49,16 +49,10 @@
             
             </ul>
           </div> 
+         
           <div class="row">
-            <div class="6" id="image">
-              <div class="clearfix weather-temperature">
-                <img
-                  class="pic"
-                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
-                  ,
-                  alt="clear-sky-day"
-                />
-              </div>
+            <div class="image" id="image">
+             
             </div>
 
             <div class="temp" id="temp">
@@ -67,10 +61,10 @@
               <span class="units" id="fLink">°F</span
               >
             </div>
-
+ 
             <span class="left">
               <ul>
-                <li class="p" id="precipitation">Precipitation: 75%</li>
+                <li class="p" id="country">Country: 75%</li>
                 <li class="h" id="humidity">Humidity: 3%</li>
                 <li class="w" id="wind">Wind: 23%</li>
                 <li id="hu">Humidity 3%</li>
@@ -105,9 +99,16 @@
             >
             , by Christina Velasquez
           </small>
-          <p>POSITIVEDISTRUCTION</p>
+          
         </div>
-    
+    <div class="weathericon">
+                <img class="mainicon"
+                  
+                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                  ,
+                  alt="clear-sky-day"
+                />
+              </div>
    
     
     <script src="src/script.js"></script>

@@ -33,18 +33,18 @@ function displayCityName(response) {
   h1.innerHTML = `${response.data.name}`;
   let tempp = document.querySelector("#justTemp");
   tempp.innerHTML = `${Math.round(response.data.main.temp)}`;
-  let country = document.querySelector("#precipitation");
+  let country = document.querySelector("#country");
   country.innerHTML = `Country: ${response.data.sys.country}`;
   let description = document.querySelector("#humidity");
   description.innerHTML = `Forcast: ${response.data.weather[0].description}`;
   let wind = document.querySelector("#wind");
   wind.innerHTML = `Wind Speed: ${response.data.wind.speed} MPH`;
   let humidity = document.querySelector("#hu");
-  humidity.innerHTML = `Humidity: ${response.data.main.humidity}`;
+  humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   let maxhigh = document.querySelector("#high");
-  maxhigh.innerHTML = `⬆️ ${Math.round(response.data.main.temp_max)}`;
+  maxhigh.innerHTML = `⬆️ ${Math.round(response.data.main.temp_max)}°`;
   let maxlow = document.querySelector("#low");
-  maxlow.innerHTML = `⬇️ ${Math.round(response.data.main.temp_min)}`;
+  maxlow.innerHTML = `⬇️ ${Math.round(response.data.main.temp_min)}°`;
   console.log(response.data.coord.lon);
   console.log(response.data.coord.lat);
   forecastCall(response.data.coord);
@@ -91,8 +91,8 @@ function displayforecast(response) {
                   />
                   <div class="weather-forecast-date"><span class="updown">⬆️${Math.round(
                     forecastDay.temperature.maximum
-                  )}
-                    ⬇️${Math.round(forecastDay.temperature.minimum)}</span>
+                  )}°
+                    ⬇️${Math.round(forecastDay.temperature.minimum)}°</span>
                     </div>
 
                 </div>
