@@ -44,10 +44,10 @@ li {
 .weatherappWrapper {
   max-width: 1150px;
   margin: 20px auto;
+  border: 6px #1e56a0;
 }
 .weatherapp {
-  border: 1px solid navy;
-  padding: 20px;
+  padding-top: 15px;
   margin-top: 60px;
   border-radius: 30px;
 }
@@ -74,8 +74,8 @@ li {
 .link {
   display: block;
   margin: 0 auto;
-  margin-left: 2px;
-  margin-bottom: -15px;
+  margin-left: 30px;
+  margin-top: -5px;
 }
 .pic {
   margin: -22px;
@@ -237,5 +237,9 @@ body {
 .mainicon {
   position: relative;
   margin-left: -1720px;
-  margin-top: -880px;
+  margin-top: -870px;
+}
+.weatherappWrapper {
+  background-color: #e7eaf6;
+  border-radius: 30px;
 }
