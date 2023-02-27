@@ -21,7 +21,7 @@ function logCity(event) {
 function forecastCall(coordinates) {
   console.log(coordinates);
   let apiKey = "ef45dbb5226daf4a30b508c33ota60fe";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat=${coordinates.lat}&key=${apiKey}&units=Imperial`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat=${coordinates.lat}&key=${apiKey}&units=imperial`;
   console.log(apiUrl);
   axios.get(apiUrl).then(displayforecast);
 }
