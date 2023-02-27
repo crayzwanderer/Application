@@ -74,7 +74,7 @@ li {
 .link {
   display: block;
   margin: 0 auto;
-  margin-left: 30px;
+  margin-left: 20px;
   margin-top: -5px;
 }
 .pic {
@@ -134,7 +134,7 @@ li {
 #justTemp {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 70px;
-  margin-left: 200px;
+  margin-left: 195px;
 }
 .left {
   position: relative;
@@ -236,8 +236,8 @@ body {
 
 .mainicon {
   position: relative;
-  margin-left: -1720px;
-  margin-top: -870px;
+  margin-left: -1750px;
+  margin-top: -888px;
 }
 .weatherappWrapper {
   background-color: #e7eaf6;
