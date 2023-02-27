@@ -32,13 +32,15 @@
               </div>
               <div class="col-3">
                 <input
+                id="searchButton"
                   type="submit"
                   value="search"
                   class="btn btn-primary w-100"
+                  onclick="[forecastImages]"
                 />
-              </div>
+              
             </div>
-            
+            </div>
           </form>
           <div class="overview">
             <h1>Shorewood</h1>
@@ -54,7 +56,7 @@
             <div class="image" id="image">
              
             </div>
-
+          
             <div class="temp" id="temp">
               <span class="justTemp" id="justTemp">12</span>
 
@@ -102,15 +104,16 @@
           
         </div>
     <div class="weathericon">
-                <img class="mainicon"
+                <img class="mainicon" id="mainicon"
                   
-                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
-                  ,
-                  alt="clear-sky-day"
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/330/original/sun.png?1677515337"
+                    alt="sun picture"
+                    width="98"
                 />
               </div>
    
     
-    <script src="src/script.js"></script>
+    
   </body>
+  <script src="src/script.js"></script>
 </html>

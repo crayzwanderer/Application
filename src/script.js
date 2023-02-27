@@ -21,7 +21,7 @@ function logCity(event) {
 function forecastCall(coordinates) {
   console.log(coordinates);
   let apiKey = "ef45dbb5226daf4a30b508c33ota60fe";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat=${coordinates.lat}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat=${coordinates.lat}&key=${apiKey}&units=Imperial`;
   console.log(apiUrl);
   axios.get(apiUrl).then(displayforecast);
 }
@@ -85,7 +85,7 @@ function displayforecast(response) {
                 </div>
                    
                   <img class="sunpic"
-                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png",
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/330/original/sun.png?1677515337"
                     alt="sun picture"
                     width="98"
                   />
@@ -105,3 +105,25 @@ function displayforecast(response) {
   fElement.innerHTML = forecastHTML;
   console.log(response.data.daily);
 }
+
+let forecastImages = [
+  "cloudy.png",
+  "mist.png",
+  "moon.png",
+  "rain.png",
+  "snow.png",
+  "storm.png",
+  "sun.png",
+];
+
+let displayForecastImages = document.querySelector("#weathericon");
+displayForecastImages = forecastImages[7];
+
+let currentImageIndex = 0;
+
+function rotateImage() {
+  displayForecastImages = forecastImages[currentImageIndex];
+}
+
+//Rotate through Weather Icons Every 2 Seconds
+setInterval(rotateImage, 200);

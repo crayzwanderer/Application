@@ -38,7 +38,7 @@ li {
 }
 .left {
   position: relative;
-  margin-left: 104px;
+  margin-left: 124px;
   padding-bottom: 50px;
   margin-top: 6px;
 }
@@ -194,9 +194,11 @@ li {
   background: radial-gradient(
     circle at 10% 20%,
     rgb(55, 209, 255) 0%,
-    rgb(14, 31, 111) 100.2% background-clip: text; -webkit-background-clip: text;
-      color: transparent;
+    rgb(14, 31, 111) 100.2%
   );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 body {
@@ -219,11 +221,7 @@ body {
 .body {
   background-color: #f7f7f7;
 }
-.weathericon {
-  position: relative;
-  display: inline-block;
-  margin-left: 190px;
-}
+
 .mainicon {
   position: relative;
   margin-left: -1720px;
