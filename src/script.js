@@ -45,6 +45,7 @@ function displayCityName(response) {
   maxhigh.innerHTML = `⬆️ ${Math.round(response.data.main.temp_max)}°`;
   let maxlow = document.querySelector("#low");
   maxlow.innerHTML = `⬇️ ${Math.round(response.data.main.temp_min)}°`;
+
   console.log(response.data.coord.lon);
   console.log(response.data.coord.lat);
   forecastCall(response.data.coord);
@@ -89,6 +90,7 @@ function displayforecast(response) {
                     alt="sun picture"
                     width="98"
                   />
+                  <div class="forecastJustTemp" id="forecastJustTemp">32°</div>
                   <div class="weather-forecast-date"><span class="updown">⬆️${Math.round(
                     forecastDay.temperature.maximum
                   )}°
@@ -127,3 +129,15 @@ function rotateImage() {
 
 //Rotate through Weather Icons Every 2 Seconds
 setInterval(rotateImage, 200);
+
+/// Define the response variable (assuming it has already been retrieved from an API or elsewhere)
+const response = { data: { main: { temp: 20.5 } } }; //sample data for testing
+
+//Display Forecast Temperature
+function displayForecastTemperature(response) {
+  //add response parameter to the function
+  let forecastTemp = document.querySelector("#forecastJustTemp");
+  forecastTemp.innerHTML = `${Math.round(response.data.main.temp)}`;
+}
+
+displayForecastTemperature(response); //call the function with the response variable as argument
