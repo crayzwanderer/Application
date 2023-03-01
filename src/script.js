@@ -45,6 +45,11 @@ function displayCityName(response) {
   maxhigh.innerHTML = `⬆️ ${Math.round(response.data.main.temp_max)}°`;
   let maxlow = document.querySelector("#low");
   maxlow.innerHTML = `⬇️ ${Math.round(response.data.main.temp_min)}°`;
+  let icon = document.querySelector("#icon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 
   console.log(response.data.coord.lon);
   console.log(response.data.coord.lat);
@@ -117,27 +122,3 @@ let forecastImages = [
   "storm.png",
   "sun.png",
 ];
-
-let displayForecastImages = document.querySelector("#weathericon");
-displayForecastImages = forecastImages[7];
-
-let currentImageIndex = 0;
-
-function rotateImage() {
-  displayForecastImages = forecastImages[currentImageIndex];
-}
-
-//Rotate through Weather Icons Every 2 Seconds
-setInterval(rotateImage, 200);
-
-/// Define the response variable (assuming it has already been retrieved from an API or elsewhere)
-const response = { data: { main: { temp: 20.5 } } }; //sample data for testing
-
-//Display Forecast Temperature
-function displayForecastTemperature(response) {
-  //add response parameter to the function
-  let forecastTemp = document.querySelector("#forecastJustTemp");
-  forecastTemp.innerHTML = `${Math.round(response.data.main.temp)}`;
-}
-
-displayForecastTemperature(response); //call the function with the response variable as argument
