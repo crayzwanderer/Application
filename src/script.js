@@ -76,6 +76,7 @@ function displayforecast(response) {
   let forecast = response.data.daily;
   let fElement = document.querySelector("#forecast");
   let forecastHTML = `<div class ="row" id="row">`;
+
   forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
@@ -95,7 +96,10 @@ function displayforecast(response) {
                     alt="sun picture"
                     width="98"
                   />
-                  <div class="forecastJustTemp" id="forecastJustTemp">32°</div>
+                  <div class="forecastJustTemp" id="forecastJustTemp">${Math.round(
+                    forecastDay.temperature.minimum
+                  )}°
+</div>
                   <div class="weather-forecast-date"><span class="updown">⬆️${Math.round(
                     forecastDay.temperature.maximum
                   )}°
