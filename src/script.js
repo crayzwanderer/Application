@@ -97,7 +97,7 @@ function displayforecast(response) {
                     width="98"
                   />
                   <div class="forecastJustTemp" id="forecastJustTemp">${Math.round(
-                    forecastDay.temperature.minimum
+                    forecastDay.temperature.day
                   )}°
 </div>
                   <div class="weather-forecast-date"><span class="updown">⬆️${Math.round(
@@ -105,7 +105,6 @@ function displayforecast(response) {
                   )}°
                     ⬇️${Math.round(forecastDay.temperature.minimum)}°</span>
                     </div>
-
                 </div>
               </div>
           </div>`;

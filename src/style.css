@@ -8,7 +8,7 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  margin-left: -45px;
+  margin-left: -29px;
   padding-top: 35px;
   padding-bottom: 23px;
   font-size: 65px;
@@ -134,13 +134,13 @@ li {
 #justTemp {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 70px;
-  margin-left: 195px;
+  margin-left: 202px;
 }
 .left {
   position: relative;
-  margin-left: 265px;
+  margin-left: 295px;
   padding-bottom: 50px;
-  margin-top: -26px;
+  margin-top: -29px;
 }
 .image {
   margin-top: 209px;
@@ -148,7 +148,7 @@ li {
 }
 
 #textTop {
-  margin-left: -59px;
+  margin-left: -39px;
   margin-top: -7px;
 }
 #high {
@@ -236,7 +236,7 @@ body {
 
 .mainicon {
   position: relative;
-  margin-left: -1750px;
+  margin-left: -1660px;
   margin-top: -888px;
 }
 .weatherappWrapper {
