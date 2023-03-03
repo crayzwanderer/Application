@@ -183,13 +183,13 @@ li {
   text-align: center;
 }
 .condition {
-  text-align: center;
+  display: block;
+  margin: 0 auto;
   color: black;
   font-size: 15px;
   font-family: cursive;
   text-transform: capitalize;
   width: max-content;
-  margin-left: 5px;
 }
 
 .updown {

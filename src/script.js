@@ -90,12 +90,19 @@ function displayforecast(response) {
                   <div class="condition">
                 ${forecastDay.condition.description}
                 </div>
-                   
-                  <img class="sunpic"
+                  
+
+<div class "forcastIcon">
+                  <img class="sunpic" 
                     src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/330/original/sun.png?1677515337"
                     alt="sun picture"
                     width="98"
+                    
+                    
                   />
+
+
+                  </div>
                   <div class="forecastJustTemp" id="forecastJustTemp">${Math.round(
                     forecastDay.temperature.day
                   )}°
@@ -124,4 +131,25 @@ let forecastImages = [
   "snow.png",
   "storm.png",
   "sun.png",
+  ,
+];
+console.log(forecastImages);
+
+let forecastConditions = [
+  "Snow",
+  "Broken Clouds",
+  "Scattered Clouds",
+  "Overcast Clouds",
+  "Light Rain",
+  "Rain",
+  "Moderate Rain",
+  "Light Snow",
+  "Mist",
+  "Sun",
+  "Sunny",
+  "Few Clouds",
+  "Rain and Snow",
+  "Sky Is Clear",
+  "Heavy Intensity Rain",
+  "Clear Sky",
 ];
