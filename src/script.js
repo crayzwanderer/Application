@@ -91,7 +91,6 @@ function displayforecast(response) {
                 ${forecastDay.condition.description}
                 </div>
                   
-
 <div class "forcastIcon">
                   <img class="sunpic" 
                     src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/330/original/sun.png?1677515337"
@@ -100,8 +99,6 @@ function displayforecast(response) {
                     
                     
                   />
-
-
                   </div>
                   <div class="forecastJustTemp" id="forecastJustTemp">${Math.round(
                     forecastDay.temperature.day
