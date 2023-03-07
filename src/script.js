@@ -93,8 +93,9 @@ function displayforecast(response) {
                   
 <div class "forcastIcon">
                    <img src="${forecastDay.condition.icon_url}"
-          alt=""
+          alt="weatherforecasticons"
           width="98"
+
         
                     
                     
