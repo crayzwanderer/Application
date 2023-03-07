@@ -92,10 +92,10 @@ function displayforecast(response) {
                 </div>
                   
 <div class "forcastIcon">
-                  <img class="sunpic" 
-                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/330/original/sun.png?1677515337"
-                    alt="sun picture"
-                    width="98"
+                   <img src="${forecastDay.condition.icon_url}"
+          alt=""
+          width="98"
+        
                     
                     
                   />
